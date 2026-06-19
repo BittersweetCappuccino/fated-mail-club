@@ -858,7 +858,7 @@
     <li><a href="#how">How It Works</a></li>
     <li><a href="#testimonials">Letters</a></li>
   </ul>
-  <a href="#archive" class="nav-cta">Subscribe</a>
+  <a href="subscribe.html" class="nav-cta">Subscribe</a>
 </nav>
 
 <!-- HERO -->
@@ -873,7 +873,7 @@
       <h1 class="hero-headline">Stories That<br>Find <em>You</em> by<br>Moonlight</h1>
       <p class="hero-sub">Every month, a handcrafted envelope lands at your door — filled with an original romantasy story, a letter from the author, a wax-sealed secret, and more magic you can hold.</p>
       <div class="hero-actions">
-        <a href="#archive" class="btn-primary">Claim Your Fate</a>
+        <a href="subscribe.html" class="btn-primary">Claim Your Fate</a>
         <a href="#how" class="btn-secondary">How It Works</a>
       </div>
     </div>
@@ -1030,7 +1030,7 @@
               <span class="price-amount">$34</span>
               <span class="price-period">one-time</span>
             </div>
-            <a href="#" class="pkg-btn" onclick="scrollToSection(event,'#archive')">Add to Order</a>
+            <a href="subscribe.html" class="pkg-btn">Add to Order</a>
           </div>
         </div>
       </div>
@@ -1090,7 +1090,7 @@
               <span class="price-amount">$39</span>
               <span class="price-period">one-time</span>
             </div>
-            <a href="#" class="pkg-btn btn-rose" onclick="scrollToSection(event,'#archive')">Add to Order</a>
+            <a href="subscribe.html" class="pkg-btn btn-rose">Add to Order</a>
           </div>
         </div>
       </div>
@@ -1159,7 +1159,7 @@
               <span class="price-amount">$34</span>
               <span class="price-period">one-time</span>
             </div>
-            <a href="#" class="pkg-btn" onclick="scrollToSection(event,'#archive')">Add to Order</a>
+            <a href="subscribe.html" class="pkg-btn">Add to Order</a>
           </div>
         </div>
       </div>
@@ -1300,13 +1300,6 @@
       --max-op: ${Math.random() * 0.5 + 0.2};
     `;
     container.appendChild(s);
-  }
-
-  // Smooth scroll helper
-  function scrollToSection(e, selector) {
-    e.preventDefault();
-    const el = document.querySelector(selector);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
   }
 
   // Reveal on scroll
