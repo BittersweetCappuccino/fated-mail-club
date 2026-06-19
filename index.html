@@ -882,17 +882,16 @@
       <div class="envelope-scene">
         <svg class="envelope-svg" viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
 
-          <!-- open top flap, standing up behind everything -->
-          <path d="M70,150 L200,30 L330,150 Z" fill="#e6d8bd" stroke="#c8922a" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M70,150 L200,40 L330,150 Z" fill="#000000" opacity="0.05"/>
+          <!-- open top flap, standing up behind everything (interior is lighter) -->
+          <path d="M62,150 L200,30 L338,150 Z" fill="#f3ebd8" stroke="#c8922a" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"/>
           <!-- decorative gold trim inside the flap -->
-          <path d="M86,144 L200,50 L314,144" fill="none" stroke="#c8922a" stroke-opacity="0.45" stroke-width="1.3"/>
-          <path d="M94,144 L200,57 L306,144" fill="none" stroke="#c8922a" stroke-opacity="0.25" stroke-width="0.8"/>
+          <path d="M82,144 L200,48 L318,144" fill="none" stroke="#c8922a" stroke-opacity="0.45" stroke-width="1.3"/>
+          <path d="M90,144 L200,55 L310,144" fill="none" stroke="#c8922a" stroke-opacity="0.25" stroke-width="0.8"/>
           <!-- little star at the flap apex -->
           <path d="M200,60 L202,67 L209,67 L203.5,71.5 L205.5,78.5 L200,74 L194.5,78.5 L196.5,71.5 L191,67 L198,67 Z" fill="#c8922a" fill-opacity="0.6"/>
 
-          <!-- back wall of the envelope (the flat panel the letter rests against) -->
-          <path d="M62,150 L338,150 L338,330 L62,330 Z" fill="#ecdfc6"/>
+          <!-- back wall / interior of the envelope (lighter, since it's the open inside) -->
+          <path d="M62,150 L338,150 L338,330 L62,330 Z" fill="#f3ebd8"/>
 
           <!-- letter, tucked in, peeking out above the front pocket -->
           <g class="letter-group">
@@ -923,22 +922,19 @@
           </g>
 
           <!-- front pocket: bottom triangle (the V) -->
-          <path d="M62,330 L200,210 L338,330 Z" fill="#f0e4d0" stroke="#c8922a" stroke-opacity="0.35" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M62,330 L200,210 L338,330 Z" fill="#e9d8bb" stroke="#c8922a" stroke-opacity="0.35" stroke-width="2" stroke-linejoin="round"/>
 
           <!-- front pocket: left side flap (fill only) -->
-          <path d="M62,150 L200,210 L62,330 Z" fill="#ecddc2"/>
+          <path d="M62,150 L200,210 L62,330 Z" fill="#e9d8bb"/>
           <!-- front pocket: right side flap (fill only) -->
-          <path d="M338,150 L200,210 L338,330 Z" fill="#ecddc2"/>
+          <path d="M338,150 L200,210 L338,330 Z" fill="#e9d8bb"/>
 
-          <!-- subtle shading where flaps meet the V, for depth -->
-          <path d="M62,150 L200,210 L62,330 Z" fill="#000000" opacity="0.04"/>
-          <path d="M338,150 L200,210 L338,330 Z" fill="#000000" opacity="0.04"/>
+          <!-- subtle shading on the side flaps for fold depth -->
+          <path d="M62,150 L200,210 L62,330 Z" fill="#000000" opacity="0.05"/>
+          <path d="M338,150 L200,210 L338,330 Z" fill="#000000" opacity="0.05"/>
 
           <!-- outer flap edges, stopping short of the seal so no corner forms -->
           <path d="M62,150 L184,203 M338,150 L216,203" fill="none" stroke="#c8922a" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
-
-          <!-- decorative gold flourish trim along the bottom V (drawn before seal so it tucks behind) -->
-          <path d="M70,323 L186,231 M330,323 L214,231" fill="none" stroke="#c8922a" stroke-opacity="0.4" stroke-width="1.2" stroke-linecap="round"/>
 
           <!-- wax seal where the front pocket point meets the letter -->
           <circle cx="200" cy="208" r="19" fill="#a8284a"/>
@@ -953,7 +949,7 @@
           <circle cx="358" cy="120" r="2.5" fill="#e8b44a" fill-opacity="0.5"/>
           <circle cx="200" cy="20" r="1.8" fill="#e8b44a" fill-opacity="0.6"/>
 
-          <!-- outer envelope edge: sides and bottom only, leaving the top open (no line over the letter) -->
+          <!-- outer envelope edge: sides and bottom only, leaving the top open -->
           <path d="M62,150 L62,330 L338,330 L338,150" fill="none" stroke="#c8922a" stroke-opacity="0.45" stroke-width="2.5" stroke-linejoin="round"/>
         </svg>
       </div>
