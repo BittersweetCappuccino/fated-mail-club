@@ -1094,3 +1094,76 @@ footer {
   .modal { padding: 2.5rem 1.5rem 2rem; }
   .modal-plans { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   CONTENT SUBPAGES (archive, how-it-works, letters, etc.)
+   Shared scaffolding so every secondary page matches the
+   landing page's midnight-and-gold theme.
+   ============================================================ */
+.content-page {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 70% 0%, rgba(168,40,74,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 10% 30%, rgba(120,100,200,0.10) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Stars drift behind the whole page, not just one section */
+.content-page .stars { position: fixed; z-index: 0; }
+
+.page-hero {
+  position: relative;
+  z-index: 1;
+  padding: 10rem 3rem 2rem;
+}
+
+.page-hero .section-header { margin-bottom: 0; }
+
+.page-section {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 3rem 6rem;
+}
+
+.page-inner { max-width: 1200px; margin: 0 auto; }
+
+.page-intro {
+  max-width: 640px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(240,232,216,0.6);
+  line-height: 1.75;
+}
+
+/* Extra archived-box illustration backdrops */
+.pkg-img-thorn {
+  background: linear-gradient(160deg, #1a1024 0%, #2a1838 40%, #1d2a1a 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.pkg-img-cinder {
+  background: linear-gradient(160deg, #200d0a 0%, #3a1810 40%, #2a1208 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.pkg-img-astral {
+  background: linear-gradient(160deg, #0d0d24 0%, #1a1640 40%, #2a1838 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* A box whose run has ended — sealed in the archive forever */
+.pkg-badge.badge-sealed {
+  background: var(--midnight-light);
+  color: var(--gold-light);
+  border: 1px solid var(--border-warm);
+}
+.pkg-btn.sold-out {
+  border-color: var(--border-warm);
+  color: var(--text-muted);
+  pointer-events: none;
+  cursor: default;
+}
+
+@media (max-width: 900px) {
+  .page-hero { padding: 8rem 1.5rem 1.5rem; }
+  .page-section { padding: 2rem 1.5rem 4rem; }
+}

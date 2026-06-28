@@ -3,143 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fated Mail Club — Romantasy by Post</title>
+<title>Archive — Fated Mail Club</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="content-page">
+
+<div class="stars" id="stars-container"></div>
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo">Fated Mail Club</a>
+  <a href="index.html" class="nav-logo">Fated Mail Club</a>
   <ul class="nav-links">
     <li><a href="archive.html">Archive</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#testimonials">Letters</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="letters.html">Letters</a></li>
   </ul>
   <a href="subscribe.html" class="nav-cta">Subscribe</a>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg"></div>
-
-  <div class="stars" id="stars-container"></div>
-
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-tag">Est. 2022 — The Romantasy Post</div>
-      <h1 class="hero-headline">Stories That<br>Find <em>You</em> by<br>Moonlight</h1>
-      <p class="hero-sub">Every month, a handcrafted envelope lands at your door — filled with an original romantasy story, a letter from the author, a wax-sealed secret, and more magic you can hold.</p>
-      <div class="hero-actions">
-        <a href="subscribe.html" class="btn-primary">Claim Your Fate</a>
-        <a href="#how" class="btn-secondary">How It Works</a>
-      </div>
-    </div>
-
-    <div class="envelope-wrapper">
-      <div class="envelope-scene">
-        <svg class="envelope-svg" viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
-
-          <!-- open top flap, standing up behind everything (interior is lighter) -->
-          <path d="M62,150 L200,30 L338,150 Z" fill="#f3ebd8" stroke="#c8922a" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"/>
-          <!-- decorative gold trim inside the flap -->
-          <path d="M82,144 L200,48 L318,144" fill="none" stroke="#c8922a" stroke-opacity="0.45" stroke-width="1.3"/>
-          <path d="M90,144 L200,55 L310,144" fill="none" stroke="#c8922a" stroke-opacity="0.25" stroke-width="0.8"/>
-          <!-- little star at the flap apex -->
-          <path d="M200,60 L202,67 L209,67 L203.5,71.5 L205.5,78.5 L200,74 L194.5,78.5 L196.5,71.5 L191,67 L198,67 Z" fill="#c8922a" fill-opacity="0.6"/>
-
-          <!-- back wall / interior of the envelope (lighter, since it's the open inside) -->
-          <path d="M62,150 L338,150 L338,330 L62,330 Z" fill="#f3ebd8"/>
-
-          <!-- letter, tucked in, peeking out above the front pocket -->
-          <g class="letter-group">
-            <rect x="96" y="92" width="208" height="210" rx="3" fill="#00000018" transform="translate(4,5)"/>
-            <rect x="96" y="92" width="208" height="210" rx="3" fill="#faf6ef" stroke="#c8922a" stroke-opacity="0.25" stroke-width="1"/>
-            <!-- fine inner border frame on the letter -->
-            <rect x="104" y="100" width="192" height="194" rx="2" fill="none" stroke="#c8922a" stroke-opacity="0.3" stroke-width="0.8"/>
-
-            <!-- postmark -->
-            <circle cx="266" cy="120" r="20" fill="none" stroke="#c8922a" stroke-opacity="0.5" stroke-width="1.3" stroke-dasharray="2 3"/>
-            <circle cx="266" cy="120" r="13" fill="none" stroke="#c8922a" stroke-opacity="0.5" stroke-width="1"/>
-            <text x="266" y="117" text-anchor="middle" font-family="DM Mono, monospace" font-size="5" letter-spacing="0.5" fill="#c8922a" fill-opacity="0.7">FATED</text>
-            <text x="266" y="124" text-anchor="middle" font-family="DM Mono, monospace" font-size="5" letter-spacing="0.5" fill="#c8922a" fill-opacity="0.7">MAIL CO</text>
-
-            <!-- chapter label with flanking sparkles -->
-            <text x="116" y="126" font-family="DM Mono, monospace" font-size="7.5" letter-spacing="1.5" fill="#c8922a">CHAPTER I</text>
-            <text x="116" y="150" font-family="Playfair Display, serif" font-style="italic" font-weight="700" font-size="19" fill="#a8284a">The Silver Court</text>
-
-            <!-- decorative divider under the title -->
-            <line x1="116" y1="160" x2="180" y2="160" stroke="#c8922a" stroke-opacity="0.5" stroke-width="1"/>
-            <path d="M190,160 l3,-3 l3,3 l-3,3 Z" fill="#c8922a" fill-opacity="0.55"/>
-            <line x1="206" y1="160" x2="288" y2="160" stroke="#c8922a" stroke-opacity="0.5" stroke-width="1"/>
-
-            <rect x="116" y="172" width="172" height="3" rx="1.5" fill="#0e0b07" opacity="0.12"/>
-            <rect x="116" y="184" width="145" height="3" rx="1.5" fill="#a8284a" opacity="0.2"/>
-            <rect x="116" y="196" width="165" height="3" rx="1.5" fill="#0e0b07" opacity="0.12"/>
-            <rect x="116" y="208" width="110" height="3" rx="1.5" fill="#0e0b07" opacity="0.12"/>
-          </g>
-
-          <!-- front pocket: bottom triangle (the V) -->
-          <path d="M62,330 L200,210 L338,330 Z" fill="#e9d8bb" stroke="#c8922a" stroke-opacity="0.35" stroke-width="2" stroke-linejoin="round"/>
-
-          <!-- front pocket: left side flap (fill only) -->
-          <path d="M62,150 L200,210 L62,330 Z" fill="#e9d8bb"/>
-          <!-- front pocket: right side flap (fill only) -->
-          <path d="M338,150 L200,210 L338,330 Z" fill="#e9d8bb"/>
-
-          <!-- subtle shading on the side flaps for fold depth -->
-          <path d="M62,150 L200,210 L62,330 Z" fill="#000000" opacity="0.05"/>
-          <path d="M338,150 L200,210 L338,330 Z" fill="#000000" opacity="0.05"/>
-
-          <!-- outer flap edges, stopping short of the seal so no corner forms -->
-          <path d="M62,150 L184,203 M338,150 L216,203" fill="none" stroke="#c8922a" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
-
-          <!-- wax seal where the front pocket point meets the letter -->
-          <circle cx="200" cy="208" r="19" fill="#a8284a"/>
-          <circle cx="200" cy="208" r="19" fill="none" stroke="#e0a0b0" stroke-opacity="0.35" stroke-width="1.5"/>
-          <circle cx="200" cy="208" r="14.5" fill="none" stroke="#7a1d36" stroke-opacity="0.5" stroke-width="0.8" stroke-dasharray="1.5 2"/>
-          <text x="200" y="215" text-anchor="middle" font-family="Playfair Display, serif" font-style="italic" font-weight="700" font-size="18" fill="#faf6ef">F</text>
-
-          <!-- sparkle accents floating around the envelope -->
-          <path d="M55,110 l1.5,-4 l1.5,4 l4,1.5 l-4,1.5 l-1.5,4 l-1.5,-4 l-4,-1.5 Z" fill="#e8b44a" fill-opacity="0.7"/>
-          <path d="M350,200 l1.2,-3.2 l1.2,3.2 l3.2,1.2 l-3.2,1.2 l-1.2,3.2 l-1.2,-3.2 l-3.2,-1.2 Z" fill="#e8b44a" fill-opacity="0.6"/>
-          <circle cx="44" cy="250" r="2" fill="#e8b44a" fill-opacity="0.5"/>
-          <circle cx="358" cy="120" r="2.5" fill="#e8b44a" fill-opacity="0.5"/>
-          <circle cx="200" cy="20" r="1.8" fill="#e8b44a" fill-opacity="0.6"/>
-
-          <!-- outer envelope edge: sides and bottom only, leaving the top open -->
-          <path d="M62,150 L62,330 L338,330 L338,150" fill="none" stroke="#c8922a" stroke-opacity="0.45" stroke-width="2.5" stroke-linejoin="round"/>
-        </svg>
-      </div>
-    </div>
+<!-- PAGE HEADER -->
+<header class="page-hero">
+  <div class="section-header reveal">
+    <div class="section-label">The Complete Archive</div>
+    <h2 class="section-title">Every Story We've <em>Sent</em></h2>
+    <p class="page-intro">Each box is a completed story arc — printed once, sealed by hand, and never reprinted. When a season's run ends, it closes forever. Below is the full ledger of enchantments that have already found their readers.</p>
   </div>
-</section>
+</header>
 
-<div style="padding: 0; overflow: hidden;">
-  <div class="section-divider"><span class="divider-ornament">✦ ✦ ✦</span></div>
-</div>
-
-<!-- ARCHIVE -->
-<section id="archive">
-  <div class="archive-inner">
-    <div class="section-header reveal">
-      <div class="section-label">Archive Collection</div>
-      <h2 class="section-title">Past <em>Enchantments</em></h2>
-      <p class="section-sub">Each box is a completed story arc — available once, then sealed forever in the archive.</p>
-    </div>
-
+<!-- ARCHIVE GRID -->
+<section class="page-section">
+  <div class="page-inner">
     <div class="packages-grid">
 
-      <!-- Card 1 -->
+      <!-- Dec 2024 -->
       <div class="pkg-card reveal reveal-delay-1">
         <div class="pkg-image pkg-img-solstice">
           <svg class="pkg-illustration" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
-            <!-- Night sky -->
             <rect width="380" height="200" fill="#1a1230"/>
-            <!-- Stars -->
             <circle cx="40" cy="30" r="1.5" fill="#f0e8d8" opacity="0.8"/>
             <circle cx="90" cy="18" r="1" fill="#f0e8d8" opacity="0.6"/>
             <circle cx="150" cy="40" r="1.5" fill="#e8c880" opacity="0.7"/>
@@ -150,28 +53,21 @@
             <circle cx="60" cy="60" r="1" fill="#e8c880" opacity="0.5"/>
             <circle cx="120" cy="70" r="1.5" fill="#f0e8d8" opacity="0.4"/>
             <circle cx="300" cy="55" r="1" fill="#f0e8d8" opacity="0.7"/>
-            <!-- Moon -->
             <circle cx="300" cy="55" r="32" fill="#2d2050"/>
             <circle cx="310" cy="48" r="28" fill="#faf0d0" opacity="0.9"/>
             <circle cx="322" cy="42" r="20" fill="#2d2050"/>
-            <!-- Castle silhouette -->
             <rect x="130" y="120" width="120" height="80" fill="#120f28"/>
             <rect x="150" y="100" width="25" height="30" fill="#120f28"/>
             <rect x="205" y="95" width="25" height="35" fill="#120f28"/>
             <polygon points="150,100 162.5,80 175,100" fill="#1a0a30"/>
             <polygon points="205,95 217.5,72 230,95" fill="#1a0a30"/>
-            <!-- Tower left -->
             <rect x="100" y="130" width="18" height="70" fill="#120f28"/>
             <polygon points="100,130 109,110 118,130" fill="#1a0a30"/>
-            <!-- Tower right -->
             <rect x="262" y="125" width="18" height="75" fill="#120f28"/>
             <polygon points="262,125 271,105 280,125" fill="#1a0a30"/>
-            <!-- Glowing window -->
             <rect x="185" y="140" width="12" height="16" rx="6" fill="#e8b44a" opacity="0.9"/>
             <rect x="185" y="140" width="12" height="16" rx="6" fill="#f0d080" opacity="0.3"/>
-            <!-- Ground -->
             <rect x="0" y="185" width="380" height="15" fill="#0d0b20"/>
-            <!-- Fog -->
             <ellipse cx="190" cy="190" rx="180" ry="25" fill="#1a1240" opacity="0.8"/>
           </svg>
         </div>
@@ -196,39 +92,30 @@
         </div>
       </div>
 
-      <!-- Card 2 — Featured -->
+      <!-- Sep 2024 — Featured -->
       <div class="pkg-card featured reveal reveal-delay-2">
         <div class="pkg-badge">Most Loved</div>
         <div class="pkg-image pkg-img-tides">
           <svg class="pkg-illustration" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
             <rect width="380" height="200" fill="#0d1f2d"/>
-            <!-- Deep ocean bg gradient layers -->
             <rect x="0" y="100" width="380" height="100" fill="#0a1a28"/>
-            <!-- Stars/bioluminescence above -->
             <circle cx="50" cy="25" r="1.5" fill="#80c0ff" opacity="0.7"/>
             <circle cx="110" cy="12" r="1" fill="#c0d8ff" opacity="0.8"/>
             <circle cx="180" cy="30" r="2" fill="#80c0ff" opacity="0.5"/>
             <circle cx="240" cy="10" r="1.5" fill="#ffffff" opacity="0.6"/>
             <circle cx="310" cy="22" r="1" fill="#c0d8ff" opacity="0.7"/>
             <circle cx="355" cy="35" r="2" fill="#80c0ff" opacity="0.4"/>
-            <!-- Moon reflection on water -->
             <ellipse cx="190" cy="105" rx="30" ry="8" fill="#c0d8ff" opacity="0.15"/>
-            <!-- Moon -->
             <circle cx="190" cy="50" r="34" fill="#1a2f40"/>
             <circle cx="196" cy="44" r="30" fill="#ddeeff" opacity="0.9"/>
             <circle cx="208" cy="38" r="20" fill="#1a2f40"/>
-            <!-- Water surface -->
             <path d="M0,105 Q50,95 100,108 Q150,120 200,106 Q250,92 300,108 Q340,118 380,105 L380,200 L0,200Z" fill="#0d2a3d" opacity="0.95"/>
-            <!-- Waves -->
             <path d="M0,110 Q40,100 80,112 Q120,123 160,110 Q200,97 240,110 Q280,122 320,109 Q355,98 380,108" fill="none" stroke="#1a4060" stroke-width="1.5" opacity="0.8"/>
-            <!-- Mermaid silhouette -->
             <path d="M185,80 Q188,72 190,68 Q192,72 195,80 Q197,88 196,95 Q195,100 190,102 Q185,100 184,95 Z" fill="#1a3050"/>
             <path d="M184,95 Q182,108 180,115 Q184,120 190,118 Q196,120 200,115 Q198,108 196,95Z" fill="#1a3050"/>
             <path d="M180,115 Q174,122 170,130 Q178,128 185,132" fill="none" stroke="#1a3050" stroke-width="3" stroke-linecap="round"/>
             <path d="M200,115 Q206,122 210,130 Q202,128 195,132" fill="none" stroke="#1a3050" stroke-width="3" stroke-linecap="round"/>
-            <!-- Glow around mermaid -->
             <ellipse cx="190" cy="100" rx="22" ry="28" fill="#4090c0" opacity="0.08"/>
-            <!-- Bioluminescent dots in water -->
             <circle cx="80" cy="135" r="2" fill="#40c0a0" opacity="0.5"/>
             <circle cx="140" cy="150" r="1.5" fill="#40c0a0" opacity="0.4"/>
             <circle cx="280" cy="140" r="2" fill="#4080ff" opacity="0.4"/>
@@ -256,47 +143,37 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
+      <!-- Jun 2024 -->
       <div class="pkg-card reveal reveal-delay-3">
         <div class="pkg-image pkg-img-wilds">
           <svg class="pkg-illustration" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
             <rect width="380" height="200" fill="#0d1a12"/>
-            <!-- Night sky through canopy -->
             <circle cx="60" cy="20" r="1.5" fill="#d0f0a0" opacity="0.6"/>
             <circle cx="160" cy="12" r="1" fill="#ffffff" opacity="0.7"/>
             <circle cx="250" cy="25" r="2" fill="#d0f0a0" opacity="0.5"/>
             <circle cx="330" cy="10" r="1.5" fill="#ffffff" opacity="0.8"/>
             <circle cx="190" cy="35" r="1" fill="#d0f0a0" opacity="0.4"/>
-            <!-- Moon -->
             <circle cx="190" cy="50" r="28" fill="#162010"/>
             <circle cx="196" cy="44" r="24" fill="#e0f8c0" opacity="0.85"/>
             <circle cx="206" cy="38" r="16" fill="#162010"/>
-            <!-- Trees left -->
             <rect x="0" y="80" width="18" height="120" fill="#0a1208"/>
             <polygon points="-10,95 9,40 28,95" fill="#0e1a0c"/>
             <polygon points="-5,75 9,25 23,75" fill="#122010"/>
-            <!-- Trees center-left -->
             <rect x="60" y="100" width="14" height="100" fill="#0a1208"/>
             <polygon points="50,115 67,60 84,115" fill="#0e1a0c"/>
             <polygon points="54,95 67,48 80,95" fill="#122010"/>
-            <!-- Trees right -->
             <rect x="340" y="85" width="18" height="120" fill="#0a1208"/>
             <polygon points="330,100 349,45 368,100" fill="#0e1a0c"/>
             <polygon points="334,80 349,32 364,80" fill="#122010"/>
             <rect x="290" y="105" width="14" height="100" fill="#0a1208"/>
             <polygon points="280,120 297,65 314,120" fill="#0e1a0c"/>
-            <!-- Forest floor glow -->
             <ellipse cx="190" cy="185" rx="160" ry="20" fill="#204018" opacity="0.6"/>
-            <!-- Fox silhouette -->
             <path d="M175,148 Q180,138 188,136 Q196,138 200,148 Q202,154 200,158 Q196,162 188,162 Q180,162 176,158 Z" fill="#0e1208"/>
             <path d="M200,148 Q208,140 215,145 Q218,150 215,155 L200,158Z" fill="#0e1208"/>
             <path d="M175,148 Q168,140 162,144 Q159,149 163,154 L176,158Z" fill="#0e1208"/>
-            <!-- Fox tail -->
             <path d="M176,156 Q168,162 166,170 Q172,165 176,168 Q178,162 176,156Z" fill="#0e1208"/>
-            <!-- Glowing eyes -->
             <circle cx="184" cy="148" r="2" fill="#a0e060" opacity="0.9"/>
             <circle cx="192" cy="148" r="2" fill="#a0e060" opacity="0.9"/>
-            <!-- Fireflies/magic particles -->
             <circle cx="120" cy="120" r="2" fill="#80ff80" opacity="0.7"/>
             <circle cx="250" cy="130" r="1.5" fill="#80ff80" opacity="0.5"/>
             <circle cx="140" cy="155" r="2.5" fill="#a0e060" opacity="0.4"/>
@@ -325,74 +202,150 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <!-- Mar 2024 -->
+      <div class="pkg-card reveal reveal-delay-1">
+        <div class="pkg-image pkg-img-thorn">
+          <svg class="pkg-illustration" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="200" fill="#1a1024"/>
+            <circle cx="50" cy="25" r="1.2" fill="#e8c0e0" opacity="0.7"/>
+            <circle cx="130" cy="15" r="1" fill="#f0e8d8" opacity="0.6"/>
+            <circle cx="320" cy="22" r="1.5" fill="#e8c0e0" opacity="0.6"/>
+            <circle cx="260" cy="12" r="1" fill="#f0e8d8" opacity="0.8"/>
+            <circle cx="300" cy="50" r="26" fill="#241432"/>
+            <circle cx="308" cy="44" r="22" fill="#f0d8ec" opacity="0.85"/>
+            <circle cx="318" cy="39" r="15" fill="#241432"/>
+            <path d="M40,200 Q60,150 50,110 Q44,80 60,55" fill="none" stroke="#16240f" stroke-width="3"/>
+            <path d="M340,200 Q320,150 332,110 Q340,82 322,58" fill="none" stroke="#16240f" stroke-width="3"/>
+            <path d="M52,120 l-7,-3 M55,95 l7,-2 M48,70 l-7,-3" stroke="#16240f" stroke-width="2"/>
+            <path d="M330,120 l7,-3 M327,95 l-7,-2 M334,70 l7,-3" stroke="#16240f" stroke-width="2"/>
+            <circle cx="60" cy="55" r="7" fill="#7a1d36"/>
+            <circle cx="60" cy="55" r="3.5" fill="#a8284a"/>
+            <circle cx="322" cy="58" r="7" fill="#7a1d36"/>
+            <circle cx="322" cy="58" r="3.5" fill="#a8284a"/>
+            <circle cx="120" cy="150" r="6" fill="#7a1d36"/>
+            <circle cx="120" cy="150" r="3" fill="#a8284a"/>
+            <path d="M180,90 q4,-4 8,0 q-4,4 -8,0Z" fill="#a8284a" opacity="0.6"/>
+            <path d="M210,120 q3,-3 6,0 q-3,3 -6,0Z" fill="#e05070" opacity="0.5"/>
+            <path d="M160,140 q3,-3 6,0 q-3,3 -6,0Z" fill="#a8284a" opacity="0.5"/>
+            <ellipse cx="190" cy="195" rx="170" ry="18" fill="#0f1a0c" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-season">Spring Equinox — Mar 2024</div>
+          <div class="pkg-title">A Crown of Thornlight</div>
+          <p class="pkg-desc">A garden that blooms only by moonlight. A cursed gardener-queen. The thief sent to steal her heart-rose discovers the thorns were never meant to keep him out — but to keep her in.</p>
+          <div class="pkg-contents">
+            <div class="pkg-item">76-page illustrated novelette</div>
+            <div class="pkg-item">Pressed rose & thorn bookmark</div>
+            <div class="pkg-item">Map of the Moonlit Garden</div>
+            <div class="pkg-item">Author's letter & cut chapter</div>
+          </div>
+          <div class="pkg-footer">
+            <div class="pkg-price">
+              <span class="price-label">Archived price</span>
+              <span class="price-amount">$34</span>
+              <span class="price-period">one-time</span>
+            </div>
+            <a href="subscribe.html" class="pkg-btn">Add to Order</a>
+          </div>
+        </div>
+      </div>
 
-<!-- HOW IT WORKS -->
-<section id="how">
-  <div class="how-inner">
-    <div class="section-header reveal">
-      <div class="section-label">The Ritual</div>
-      <h2 class="section-title">How <em>Fated Mail</em> Works</h2>
-    </div>
-    <div class="steps-grid">
-      <div class="step reveal reveal-delay-1">
-        <div class="step-num">01</div>
-        <div class="step-title">Choose Your Fate</div>
-        <p class="step-desc">Subscribe monthly or grab a single archived box. Each tier includes a different depth of enchantment.</p>
+      <!-- Dec 2023 -->
+      <div class="pkg-card reveal reveal-delay-2">
+        <div class="pkg-image pkg-img-cinder">
+          <svg class="pkg-illustration" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="200" fill="#200d0a"/>
+            <ellipse cx="190" cy="130" rx="120" ry="80" fill="#c9410a" opacity="0.12"/>
+            <ellipse cx="190" cy="140" rx="70" ry="50" fill="#f06030" opacity="0.12"/>
+            <circle cx="60" cy="30" r="1.5" fill="#f0a060" opacity="0.7"/>
+            <circle cx="320" cy="25" r="1.5" fill="#f0a060" opacity="0.6"/>
+            <circle cx="250" cy="40" r="1" fill="#ffd0a0" opacity="0.7"/>
+            <line x1="190" y1="0" x2="190" y2="50" stroke="#3a1810" stroke-width="2"/>
+            <path d="M178,52 h24 l-3,40 h-18 Z" fill="#2a1208" stroke="#7a3a18" stroke-width="1.5"/>
+            <rect x="183" y="60" width="14" height="26" rx="3" fill="#f0a040" opacity="0.9"/>
+            <rect x="183" y="60" width="14" height="26" rx="3" fill="#ffe0a0" opacity="0.4"/>
+            <circle cx="170" cy="110" r="2" fill="#f06030" opacity="0.8"/>
+            <circle cx="210" cy="95" r="1.5" fill="#e8b44a" opacity="0.7"/>
+            <circle cx="150" cy="80" r="1.5" fill="#f06030" opacity="0.6"/>
+            <circle cx="230" cy="120" r="2" fill="#f0a040" opacity="0.6"/>
+            <circle cx="195" cy="70" r="1.2" fill="#ffd0a0" opacity="0.7"/>
+            <path d="M150,185 q0,-30 12,-34 q5,-2 7,2 q4,8 2,32Z" fill="#0e0604"/>
+            <circle cx="161" cy="146" r="6" fill="#0e0604"/>
+            <path d="M218,185 q0,-30 -12,-34 q-5,-2 -7,2 q-4,8 -2,32Z" fill="#0e0604"/>
+            <circle cx="207" cy="146" r="6" fill="#0e0604"/>
+            <rect x="0" y="185" width="380" height="15" fill="#160805"/>
+          </svg>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-season">Winter Solstice — Dec 2023</div>
+          <div class="pkg-title">The Cinderwake Vows</div>
+          <p class="pkg-desc">Two rival firekeepers bound by an oath neither swore. When the eternal flame begins to gutter, they must walk into the ash together — or let the long dark swallow the last warm kingdom.</p>
+          <div class="pkg-contents">
+            <div class="pkg-item">84-page novelette</div>
+            <div class="pkg-item">Hand-poured ember-scented vow candle</div>
+            <div class="pkg-item">Foil-stamped oath card</div>
+            <div class="pkg-item">Author's letter & deleted vows</div>
+          </div>
+          <div class="pkg-footer">
+            <div class="pkg-price">
+              <span class="price-label">Archived price</span>
+              <span class="price-amount">$36</span>
+              <span class="price-period">one-time</span>
+            </div>
+            <a href="subscribe.html" class="pkg-btn">Add to Order</a>
+          </div>
+        </div>
       </div>
-      <div class="step reveal reveal-delay-2">
-        <div class="step-num">02</div>
-        <div class="step-title">The Story is Written</div>
-        <p class="step-desc">Our rotating roster of authors craft an original, never-before-published romantasy novella for each box.</p>
-      </div>
-      <div class="step reveal reveal-delay-3">
-        <div class="step-num">03</div>
-        <div class="step-title">Sealed by Hand</div>
-        <p class="step-desc">Each package is hand-assembled, wax-sealed, and stamped before it leaves our studio in Portland.</p>
-      </div>
-      <div class="step reveal reveal-delay-4">
-        <div class="step-num">04</div>
-        <div class="step-title">It Finds You</div>
-        <p class="step-desc">Open your door. The story is there, waiting. No algorithms. No screens. Just ink, paper, and magic.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="testimonials-inner">
-    <div class="testimonial reveal">
-      <p class="testimonial-text">I've been a subscriber since the very first box. Every month I clear an afternoon just to unwrap it slowly. It's the most romantic experience I have with fiction — and I've read thousands of books.</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">MV</div>
-        <div>
-          <div class="author-name">Mirabel V.</div>
-          <div class="author-handle">3-year subscriber</div>
+      <!-- Sep 2023 — Sealed forever -->
+      <div class="pkg-card reveal reveal-delay-3">
+        <div class="pkg-badge badge-sealed">Sealed Forever</div>
+        <div class="pkg-image pkg-img-astral">
+          <svg class="pkg-illustration" viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="200" fill="#0d0d24"/>
+            <circle cx="40" cy="30" r="1.5" fill="#c0c0ff" opacity="0.8"/>
+            <circle cx="90" cy="60" r="1" fill="#f0e8d8" opacity="0.6"/>
+            <circle cx="150" cy="25" r="1.2" fill="#c0c0ff" opacity="0.7"/>
+            <circle cx="220" cy="45" r="1" fill="#f0e8d8" opacity="0.8"/>
+            <circle cx="300" cy="30" r="1.5" fill="#b0a0e0" opacity="0.7"/>
+            <circle cx="350" cy="65" r="1" fill="#c0c0ff" opacity="0.6"/>
+            <circle cx="120" cy="80" r="1" fill="#f0e8d8" opacity="0.5"/>
+            <circle cx="270" cy="75" r="1.2" fill="#b0a0e0" opacity="0.6"/>
+            <path d="M40,30 L90,60 L150,25 L220,45" fill="none" stroke="#8878c8" stroke-width="0.6" opacity="0.4"/>
+            <path d="M260,40 L300,75" stroke="#e8b44a" stroke-width="1.5" opacity="0.7"/>
+            <path d="M295,72 l3,3 l-1,4 l-4,-2Z" fill="#e8b44a" opacity="0.9"/>
+            <path d="M100,50 L130,80" stroke="#b0a0e0" stroke-width="1" opacity="0.5"/>
+            <ellipse cx="190" cy="150" rx="80" ry="30" fill="#8878c8" opacity="0.12"/>
+            <path d="M190,135 L150,150 L150,178 L190,165Z" fill="#1a1640" stroke="#8878c8" stroke-width="1"/>
+            <path d="M190,135 L230,150 L230,178 L190,165Z" fill="#1a1640" stroke="#8878c8" stroke-width="1"/>
+            <path d="M190,135 L190,165" stroke="#b0a0e0" stroke-width="1"/>
+            <path d="M165,150 l18,-5 M165,158 l18,-5" stroke="#b0a0e0" stroke-width="0.8" opacity="0.6"/>
+            <path d="M197,145 l18,5 M197,153 l18,5" stroke="#b0a0e0" stroke-width="0.8" opacity="0.6"/>
+            <path d="M190,120 l1.5,-5 l1.5,5 l5,1.5 l-5,1.5 l-1.5,5 l-1.5,-5 l-5,-1.5Z" fill="#e8b44a" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-season">Autumn Equinox — Sep 2023</div>
+          <div class="pkg-title">Ink of the Fallen Stars</div>
+          <p class="pkg-desc">A scribe who writes with starlight. A fallen constellation given mortal form. Every word she pens to keep him earthbound costs a year of her own life — and the sky is growing impatient.</p>
+          <div class="pkg-contents">
+            <div class="pkg-item">68-page novelette</div>
+            <div class="pkg-item">Glow-in-the-dark constellation print</div>
+            <div class="pkg-item">Astral wax seal</div>
+            <div class="pkg-item">Author's letter & hand-drawn star chart</div>
+          </div>
+          <div class="pkg-footer">
+            <div class="pkg-price">
+              <span class="price-label">Final printing</span>
+              <span class="price-amount">$32</span>
+              <span class="price-period">sold out</span>
+            </div>
+            <span class="pkg-btn sold-out">Sold Out</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="testimonial reveal reveal-delay-1">
-      <p class="testimonial-text">The wax seal alone made me cry. Then I read the story and completely lost it. Whoever is picking these authors has impeccable taste — every single arc has hit me somewhere deep.</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">TC</div>
-        <div>
-          <div class="author-name">Theo C.</div>
-          <div class="author-handle">The Tides box, Sep 2024</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial reveal reveal-delay-2">
-      <p class="testimonial-text">I gift this to my best friend every year for her birthday. She literally squeals. We have a ritual now where we read the same box and call each other to debrief. It's sacred at this point.</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">AL</div>
-        <div>
-          <div class="author-name">Amara L.</div>
-          <div class="author-handle">Gift subscriber</div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -402,34 +355,34 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#hero" class="nav-logo" style="font-size:1.5rem;">Fated Mail Club</a>
+        <a href="index.html" class="nav-logo" style="font-size:1.5rem;">Fated Mail Club</a>
         <p>Handcrafted romantasy stories, sealed in wax and sent directly to your door. Because some stories are meant to be held.</p>
       </div>
       <div>
         <div class="footer-col-title">Stories</div>
         <ul class="footer-links">
           <li><a href="archive.html">Archive</a></li>
-          <li><a href="#archive">Current Box</a></li>
-          <li><a href="#archive">Gift a Box</a></li>
-          <li><a href="#archive">Limited Editions</a></li>
+          <li><a href="current-box.html">Current Box</a></li>
+          <li><a href="gift.html">Gift a Box</a></li>
+          <li><a href="limited-editions.html">Limited Editions</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Club</div>
         <ul class="footer-links">
-          <li><a href="#how">How It Works</a></li>
-          <li><a href="#testimonials">Reader Letters</a></li>
-          <li><a href="#">Our Authors</a></li>
-          <li><a href="#">Behind the Seal</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="letters.html">Reader Letters</a></li>
+          <li><a href="authors.html">Our Authors</a></li>
+          <li><a href="behind-the-seal.html">Behind the Seal</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Help</div>
         <ul class="footer-links">
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Shipping Info</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping Info</a></li>
+          <li><a href="returns.html">Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -439,14 +392,14 @@
         <a href="https://www.instagram.com/ella.tarr.in.words" target="_blank" rel="noopener">Instagram</a>
         <a href="#">Bookstagram</a>
         <a href="#">TikTok</a>
-        <a href="#">Newsletter</a>
+        <a href="newsletter.html">Newsletter</a>
       </div>
     </div>
   </div>
 </footer>
 
 <script>
-  // Stars
+  // Twinkling stars
   const container = document.getElementById('stars-container');
   for (let i = 0; i < 60; i++) {
     const s = document.createElement('div');
@@ -473,27 +426,7 @@
       }
     });
   }, { threshold: 0.12 });
-
   reveals.forEach(el => io.observe(el));
-
-  // Nav scroll effect
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    nav.style.borderBottomColor = window.scrollY > 40
-      ? 'rgba(200,146,42,0.35)'
-      : 'rgba(200,146,42,0.2)';
-  });
-
-  // Nav link smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
 </script>
 </body>
 </html>
