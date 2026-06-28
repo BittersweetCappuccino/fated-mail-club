@@ -1485,3 +1485,98 @@ footer {
 
 .scarcity-label .remaining { color: var(--gold-light); }
 .scarcity-label .remaining.low { color: var(--rose-light); }
+
+/* Our Authors — the rotating roster */
+.authors-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.author-card {
+  background: var(--midnight-mid);
+  border: 1px solid var(--border-warm);
+  border-radius: 4px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.author-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200,146,42,0.5);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+}
+
+.author-portrait {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--border-warm);
+  background: radial-gradient(ellipse at 50% 30%, var(--midnight-light), var(--midnight-mid));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--gold-light);
+  margin-bottom: 1.25rem;
+}
+
+.author-card-name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-on-dark);
+  margin-bottom: 0.35rem;
+  line-height: 1.2;
+}
+
+.author-role {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.author-bio {
+  font-size: 1rem;
+  color: rgba(240,232,216,0.65);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.author-credit {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-warm);
+}
+
+.author-credit em {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold-light);
+}
+
+@media (max-width: 900px) {
+  .authors-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .authors-grid { grid-template-columns: 1fr; }
+}
