@@ -1580,3 +1580,76 @@ footer {
 @media (max-width: 600px) {
   .authors-grid { grid-template-columns: 1fr; }
 }
+
+/* Behind the Seal — narrative prose, stats, and a pull-quote */
+.prose {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.prose p {
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: rgba(240,232,216,0.72);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+
+.prose p:last-child { margin-bottom: 0; }
+.prose em { color: var(--gold-light); font-style: italic; }
+
+.stat-row {
+  max-width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+}
+
+.pull-quote {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-on-dark);
+}
+
+.pull-quote em { color: var(--gold-light); }
+
+.pull-quote-attr {
+  display: block;
+  margin-top: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  .stat-row { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
