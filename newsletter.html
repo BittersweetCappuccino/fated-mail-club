@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter — Fated Mail Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="content-page">
+
+<div class="stars" id="stars-container"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Fated Mail Club</a>
+  <ul class="nav-links">
+    <li><a href="archive.html">Archive</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="letters.html">Letters</a></li>
+  </ul>
+  <a href="subscribe.html" class="nav-cta">Subscribe</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-hero">
+  <div class="section-header reveal">
+    <div class="section-label">The Free Dispatch</div>
+    <h2 class="section-title">The <em>Newsletter</em></h2>
+    <p class="page-intro">A short letter to your inbox each month — no box required. Be first to see every new story reveal, the moment limited editions open, and dispatches from the studio. No spam, no algorithms, easy to leave anytime.</p>
+  </div>
+</header>
+
+<!-- SIGNUP CARD -->
+<section class="page-section">
+  <div style="max-width:520px;margin:0 auto;">
+    <div class="contact-card reveal">
+
+      <!-- FORM STATE -->
+      <div id="form-view">
+        <div class="modal-tag">Join the List</div>
+        <h2 class="modal-title">Let the News <em>Find You</em></h2>
+        <p class="modal-sub">One thoughtful email a month. The moment a box reveals or an edition opens, you'll know before anyone else.</p>
+
+        <form id="newsletter-form" novalidate>
+          <div class="modal-field">
+            <label class="modal-label" for="n-email">Email Address</label>
+            <input class="modal-input" type="email" id="n-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <button type="submit" class="modal-submit">Join the List</button>
+          <p class="modal-fineprint">Free forever. We'll only ever send the monthly dispatch and the occasional edition alert.</p>
+        </form>
+      </div>
+
+      <!-- SUCCESS STATE -->
+      <div id="success-view" class="modal-success" hidden>
+        <div class="success-seal">F</div>
+        <div class="modal-tag">You're on the List</div>
+        <h2 class="modal-title">Welcome, <em>friend</em></h2>
+        <p class="modal-sub">Check your inbox for a note confirming your place on the dispatch. The next letter goes out at the start of the month.</p>
+        <a href="index.html" class="success-back">← Back to the Club</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL RECEIVE -->
+<section class="page-section">
+  <div class="how-inner">
+    <div class="section-header reveal">
+      <div class="section-label">What Lands in Your Inbox</div>
+      <h2 class="section-title">Worth <em>Opening</em></h2>
+    </div>
+    <div class="steps-grid steps-3">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num">✦</div>
+        <div class="step-title">New-Box Reveals</div>
+        <p class="step-desc">A first look at each upcoming story — its world, its cover art, and the keepsakes sealed inside — before it ships.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num">✦</div>
+        <div class="step-title">Edition Alerts</div>
+        <p class="step-desc">Our rarest limited editions sell out in hours. Subscribers get the drop time first, so you never miss the one you wanted.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-num">✦</div>
+        <div class="step-title">From the Studio</div>
+        <p class="step-desc">Letters from our authors, glimpses of the wax-and-ink process, and the occasional cut scene that never made it into a box.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="page-cta reveal">
+  <h2 class="section-title">Want the Real <em>Thing?</em></h2>
+  <p class="page-intro">The newsletter is lovely, but the magic arrives by post. When you're ready for a story you can hold, the Club is waiting.</p>
+  <div class="hero-actions">
+    <a href="subscribe.html" class="btn-primary">Subscribe to the Club</a>
+    <a href="current-box.html" class="btn-secondary">See This Month's Box</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:1.5rem;">Fated Mail Club</a>
+        <p>Handcrafted romantasy stories, sealed in wax and sent directly to your door. Because some stories are meant to be held.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Stories</div>
+        <ul class="footer-links">
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="current-box.html">Current Box</a></li>
+          <li><a href="gift.html">Gift a Box</a></li>
+          <li><a href="limited-editions.html">Limited Editions</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Club</div>
+        <ul class="footer-links">
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="letters.html">Reader Letters</a></li>
+          <li><a href="authors.html">Our Authors</a></li>
+          <li><a href="behind-the-seal.html">Behind the Seal</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Help</div>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping Info</a></li>
+          <li><a href="returns.html">Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Fated Mail Club. All rights reserved. Made with ink and intention.</span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ella.tarr.in.words" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Bookstagram</a>
+        <a href="#">TikTok</a>
+        <a href="newsletter.html">Newsletter</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Twinkling stars
+  const container = document.getElementById('stars-container');
+  for (let i = 0; i < 60; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.5 + 1;
+    s.style.cssText = `
+      width: ${size}px; height: ${size}px;
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 100}%;
+      --dur: ${Math.random() * 4 + 2}s;
+      --delay: ${Math.random() * 5}s;
+      --max-op: ${Math.random() * 0.5 + 0.2};
+    `;
+    container.appendChild(s);
+  }
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => io.observe(el));
+
+  // Newsletter form -> success state
+  const form = document.getElementById('newsletter-form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    document.getElementById('form-view').hidden = true;
+    document.getElementById('success-view').hidden = false;
+  });
+</script>
+</body>
+</html>
