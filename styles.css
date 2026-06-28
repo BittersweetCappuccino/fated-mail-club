@@ -1342,3 +1342,99 @@ footer {
 @media (max-width: 900px) {
   .current-box { grid-template-columns: 1fr; gap: 2rem; }
 }
+
+/* Gift a Box — gift-length tiers */
+.gift-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.gift-card {
+  position: relative;
+  background: var(--midnight-mid);
+  border: 1px solid var(--border-warm);
+  border-radius: 4px;
+  padding: 2.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.gift-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200,146,42,0.5);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+}
+
+.gift-card.featured {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 1px rgba(160,40,74,0.5);
+}
+
+.gift-card.featured:hover {
+  border-color: var(--rose-light);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(224,80,112,0.6);
+}
+
+.gift-icon {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.gift-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-on-dark);
+  margin-bottom: 0.75rem;
+}
+
+.gift-price {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1.1;
+}
+
+.gift-period {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.1rem;
+}
+
+.gift-desc {
+  font-size: 0.98rem;
+  color: rgba(240,232,216,0.6);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.gift-card .pkg-btn { align-self: center; }
+
+@media (max-width: 900px) {
+  .gift-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .gift-grid { grid-template-columns: 1fr; }
+}
+
+/* A three-step variant of the ritual grid (e.g. gifting) */
+.steps-grid.steps-3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 900px) {
+  .steps-grid.steps-3 { grid-template-columns: 1fr; }
+}
