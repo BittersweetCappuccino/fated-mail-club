@@ -1727,3 +1727,57 @@ footer {
 }
 
 .faq-answer a:hover { color: var(--cream); }
+
+/* Info table — shipping rates, returns windows, etc. */
+.info-table-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border: 1px solid var(--border-warm);
+  border-radius: 4px;
+  background: var(--midnight-mid);
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+}
+
+.info-table th,
+.info-table td {
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-warm);
+  white-space: nowrap;
+}
+
+.info-table thead th {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.info-table tbody tr:last-child td { border-bottom: none; }
+
+.info-table td {
+  font-size: 1.05rem;
+  color: rgba(240,232,216,0.72);
+}
+
+.info-table td:first-child {
+  color: var(--text-on-dark);
+  font-weight: 500;
+}
+
+.info-table tbody tr:hover { background: rgba(240,232,216,0.03); }
+
+.info-table .free {
+  color: var(--gold-light);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
