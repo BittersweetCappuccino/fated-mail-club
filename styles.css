@@ -1438,3 +1438,50 @@ footer {
 @media (max-width: 900px) {
   .steps-grid.steps-3 { grid-template-columns: 1fr; }
 }
+
+/* Limited Editions — collector backdrops + scarcity meter */
+.pkg-img-anthology {
+  background: linear-gradient(160deg, #12102a 0%, #1e1b3a 50%, #2a1838 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.pkg-img-vault {
+  background: linear-gradient(160deg, #1a1206 0%, #2a1c0a 45%, #3a2410 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.pkg-img-constellation {
+  background: linear-gradient(160deg, #0d0d24 0%, #161640 50%, #241a38 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.scarcity { margin-bottom: 1.25rem; }
+
+.scarcity-track {
+  height: 4px;
+  background: rgba(240,232,216,0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.scarcity-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+}
+
+.scarcity-fill.low {
+  background: linear-gradient(90deg, var(--rose), var(--rose-light));
+}
+
+.scarcity-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.scarcity-label .remaining { color: var(--gold-light); }
+.scarcity-label .remaining.low { color: var(--rose-light); }
