@@ -1,8 +1,8 @@
 # Fated Mail Club
 
-> A dark, elegant landing page for a fictional romantasy snail-mail subscription club — built with vanilla HTML/CSS/JS and a hand-drawn animated SVG envelope.
+> A dark, elegant website for a fictional romantasy snail-mail subscription club — built with vanilla HTML/CSS/JS and a hand-drawn animated SVG envelope.
 
-Fated Mail Club is a concept landing page for a snail-mail subscription service that delivers original monthly **romantasy** (romance + fantasy) stories by post. Each month, subscribers receive a handcrafted envelope containing an illustrated novelette, a wax-sealed keepsake, a letter from the author, and other tangible extras — stories you can hold, with no screens or algorithms involved.
+Fated Mail Club is a concept website for a snail-mail subscription service that delivers original monthly **romantasy** (romance + fantasy) stories by post. Each month, subscribers receive a handcrafted envelope containing an illustrated novelette, a wax-sealed keepsake, a letter from the author, and other tangible extras — stories you can hold, with no screens or algorithms involved.
 
 ## Features
 
