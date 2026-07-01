@@ -2,6 +2,8 @@
 
 > A dark, elegant website for a fictional romantasy snail-mail subscription club — built with vanilla HTML/CSS/JS and a hand-drawn animated SVG envelope.
 
+**View the interactive mockup →** https://github.com/BittersweetCappuccino/fated-mail-club
+
 Fated Mail Club is a concept website for a snail-mail subscription service that delivers original monthly **romantasy** (romance + fantasy) stories by post. Each month, subscribers receive a handcrafted envelope containing an illustrated novelette, a wax-sealed keepsake, a letter from the author, and other tangible extras — stories you can hold, with no screens or algorithms involved.
 
 ## Features
